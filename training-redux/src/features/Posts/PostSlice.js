@@ -93,5 +93,9 @@ const PostSlice = createSlice({
 export const postselector = (state) => state.posts.posts;
 export const postsStatus = (state) => state.posts.status;
 export const postserror = (state) => state.posts.error;
+export const postIdselcetor = (state, postId) => {
+  state.posts.post.find((post) => post.id === postId);
+};
+
 export const { addPost, reactionAdded, commentAdded } = PostSlice.actions;
 export default PostSlice.reducer;
