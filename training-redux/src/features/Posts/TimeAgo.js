@@ -10,7 +10,10 @@ const TimeAgo = ({ timestamp }) => {
     timeAgo = `${timePeriod} ago    `;
   }
   return (
-    <small title={timestamp}>
+    <small
+      title={timestamp}
+      className="block text-sm text-gray-500 dark:text-gray-400 font-light leading-snug"
+    >
       &nbsp; <i>{timeAgo}</i>
     </small>
   );

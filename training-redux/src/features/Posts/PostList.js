@@ -19,7 +19,7 @@ const PostList = () => {
 
   console.log(posts);
   if (status === "success") {
-    postlist = posts.map((post) => <SinglePost key={post.id} post={post} />);
+    postlist = posts.map((post) => <SinglePost post={post} />);
   } else if (status === "error") {
     postlist = { error };
   } else if (status === "loading") {
@@ -27,9 +27,9 @@ const PostList = () => {
   }
 
   return (
-    <div>
+    <div className="">
       <h1>postlist</h1>
-      {postlist}
+      <div className="">{postlist}</div>
     </div>
   );
 };
