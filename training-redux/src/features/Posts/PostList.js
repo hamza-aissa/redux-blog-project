@@ -29,7 +29,7 @@ const PostList = () => {
   return (
     <div className="">
       <h1>postlist</h1>
-      <div className="">{postlist}</div>
+      <div className="flex flex-col space-y-[100px] ">{postlist}</div>
     </div>
   );
 };
